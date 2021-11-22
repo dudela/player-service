@@ -13,7 +13,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 @Slf4j
 @Component
-public class CSVFileUploadImpl implements FileUpload<Player> {
+public class PlayerCSVFileUploadImpl implements FileUpload<Player> {
 
     @Override
     public List<Player> parseFile(MultipartFile file) throws Exception {
