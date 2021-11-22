@@ -41,7 +41,7 @@ public class Player {
     Gender gender;
 
     @JsonInclude(JsonInclude.Include.NON_NULL)
-    @Max(value = 255)
+    @Length(max = 255)
     @Column(name = "email")
     String email;
 }
