@@ -19,10 +19,10 @@ public class PlayerService {
     PlayerRepository playerRepository;
 
     @Autowired
-    CSVFileUploadImpl csvFileUpload;
+    FileUpload<Player> fileUpload;
 
     public void uploadPlayers(final MultipartFile file) throws Exception {
-        final List<Player> players = csvFileUpload.parseFile(file);
+        final List<Player> players = fileUpload.parseFile(file);
         playerRepository.saveAll(players);
     }
 
