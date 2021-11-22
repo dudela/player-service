@@ -3,4 +3,8 @@
 - List players
 - Update a player
 - Display a player
- 
+
+### Docker commands
+- `./mvnw package`
+- `docker build -t players:players .`
+- `docker run -p 8080:8080 players:players`
